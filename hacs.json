@@ -1,4 +1,5 @@
 {
-  "name": "Efteling Wait Times",
-  "country": "NL"
+  "name": "Efteling",
+  "content_in_root": false,
+  "render_readme": true
 }

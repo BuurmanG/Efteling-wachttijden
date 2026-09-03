@@ -2,9 +2,10 @@
   "domain": "efteling",
   "name": "Efteling",
   "version": "1.0.0",
-  "documentation": "https://api.themeparks.wiki/",
-  "issue_tracker": "https://github.com/",
+  "documentation": "https://github.com/JOUW-USERNAME/JOUW-REPO",
+  "issue_tracker": "https://github.com/JOUW-USERNAME/JOUW-REPO/issues",
   "codeowners": [],
+  "requirements": [],
   "config_flow": true,
   "iot_class": "cloud_polling"
 }
