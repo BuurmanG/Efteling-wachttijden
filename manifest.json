@@ -1,0 +1,10 @@
+{
+  "domain": "efteling",
+  "name": "Efteling",
+  "version": "1.0.0",
+  "documentation": "https://api.themeparks.wiki/",
+  "issue_tracker": "https://github.com/",
+  "codeowners": [],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}
