@@ -1,6 +1,11 @@
 # Efteling Wait Times
 
 [![GitHub Release](https://img.shields.io/github/v/release/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/releases)
+[![GitHub Downloads](https://img.shields.io/github/downloads/BuurmanG/Efteling-wachttijden/total?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/stargazers)
+[![HACS](https://img.shields.io/badge/HACS-Default-orange?style=flat-square)](https://www.hacs.xyz/)
+
+[![GitHub Release](https://img.shields.io/github/v/release/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/releases)
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange?style=flat-square)](https://hacs.xyz/)
 [![License](https://img.shields.io/github/license/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/blob/main/LICENSE)
 
