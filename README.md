@@ -12,7 +12,6 @@ The integration retrieves the available Efteling attraction information and expo
 
 * 🎢 Current wait times for Efteling attractions
 * 🔄 Automatic updates through Home Assistant
-* 🏠 Native Home Assistant integration
 * ⚙️ Configuration through the Home Assistant UI
 * 🧩 Compatible with HACS as a custom repository
 
