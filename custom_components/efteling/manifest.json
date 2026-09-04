@@ -1,11 +1,11 @@
 {
   "domain": "efteling",
   "name": "Efteling wait times",
-  "version": "1.0.3",
-  "documentation": "https://github.com/JOUW-USERNAME/JOUW-REPO",
-  "issue_tracker": "https://github.com/JOUW-USERNAME/JOUW-REPO/issues",
   "codeowners": [],
-  "requirements": [],
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  "documentation": "https://github.com/BuurmanG/Efteling-wachttijden",
+  "issue_tracker": "https://github.com/BuurmanG/Efteling-wachttijden/issues",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "1.0.3"
 }
