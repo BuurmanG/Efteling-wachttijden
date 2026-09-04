@@ -5,10 +5,6 @@
 [![GitHub Stars](https://img.shields.io/github/stars/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/stargazers)
 [![HACS](https://img.shields.io/badge/HACS-Default-orange?style=flat-square)](https://www.hacs.xyz/)
 
-[![GitHub Release](https://img.shields.io/github/v/release/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/releases)
-[![HACS](https://img.shields.io/badge/HACS-Custom-orange?style=flat-square)](https://hacs.xyz/)
-[![License](https://img.shields.io/github/license/BuurmanG/Efteling-wachttijden?style=flat-square)](https://github.com/BuurmanG/Efteling-wachttijden/blob/main/LICENSE)
-
 A custom [Home Assistant](https://www.home-assistant.io/) integration for **Efteling** that provides current attraction wait times.
 
 The integration retrieves the available Efteling attraction information and exposes it as sensors in Home Assistant.
