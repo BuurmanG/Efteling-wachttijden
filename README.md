@@ -102,7 +102,6 @@ The following example creates a compact list of Efteling waiting times, sorted a
 
 <img width="500" height="925" alt="image" src="https://github.com/user-attachments/assets/106f967f-05e3-4bfc-9f64-9c58051a320c" />
 
-![Efteling waiting times](docs/efteling-wachttijden.png)
 
 ### Lovelace configuration
 
