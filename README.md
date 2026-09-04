@@ -94,10 +94,21 @@ automation:
 
 Replace `sensor.<attraction>` with the entity created by the integration.
 
-Example with the custom:auto_entities card:
+## Example
+
+The following example creates a compact list of Efteling waiting times, sorted alphabetically. Operating attractions are shown in blue, while attractions that are not operating are shown in red.
+
+### Dashboard
+
 <img width="500" height="925" alt="image" src="https://github.com/user-attachments/assets/106f967f-05e3-4bfc-9f64-9c58051a320c" />
 
-Code:
+![Efteling waiting times](docs/efteling-wachttijden.png)
+
+### Lovelace configuration
+
+This example uses [`auto-entities`](https://github.com/thomasloven/lovelace-auto-entities) and [`template-entity-row`](https://github.com/thomasloven/lovelace-template-entity-row).
+
+```yaml
 type: custom:auto-entities
 card:
   type: entities
@@ -148,6 +159,18 @@ filter:
 sort:
   method: name
   ignore_case: true
+```
+
+### Required custom cards
+
+Install the following custom Lovelace cards through HACS:
+
+* **auto-entities**
+* **template-entity-row**
+* **card-mod**
+
+The Efteling integration itself does not require these cards; they are only needed for the dashboard example above.
+
 
 
 ## Troubleshooting
