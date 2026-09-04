@@ -94,6 +94,62 @@ automation:
 
 Replace `sensor.<attraction>` with the entity created by the integration.
 
+Example with the custom:auto_entities card:
+<img width="500" height="925" alt="image" src="https://github.com/user-attachments/assets/106f967f-05e3-4bfc-9f64-9c58051a320c" />
+
+Code:
+type: custom:auto-entities
+card:
+  type: entities
+  title: Efteling wachttijden
+  show_header_toggle: false
+  card_mod:
+    style: |
+      ha-card {
+        --primary-text-color: var(--primary-color);
+        --secondary-text-color: var(--primary-color);
+        --paper-item-icon-color: var(--primary-color);
+      }
+
+      #states > * {
+        margin: -12px 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+      }
+filter:
+  include:
+    - entity_id: sensor.efteling_*_wachttijd
+      options:
+        type: custom:template-entity-row
+        name: |
+          {{ state_attr(config.entity, 'friendly_name')
+             | replace(' Wachttijd', '') }}
+        state: |
+          {{ states(config.entity) }} min
+        card_mod:
+          style: |
+            :host {
+              --paper-item-min-height: 28px !important;
+              height: 28px !important;
+              margin: 0px !important;
+              padding: 0px !important;
+
+              {% set status_entity = config.entity
+                 | replace('_wachttijd', '_status') %}
+
+              {% if states(status_entity) == 'OPERATING' %}
+                --paper-item-icon-color: #003366;
+                color: #003366;
+              {% else %}
+                --paper-item-icon-color: red;
+                color: red;
+              {% endif %}
+            }
+sort:
+  method: name
+  ignore_case: true
+
+
 ## Troubleshooting
 
 If the integration is not updating:
