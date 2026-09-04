@@ -16,6 +16,7 @@ The integration retrieves the available Efteling attraction information and expo
 * 🧩 Compatible with HACS as a custom repository
 
 ## Installation
+
 [![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start?domain=efteling)
 ### HACS
 
