@@ -7,6 +7,9 @@ import aiohttp
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers.aiohttp_client import (
+    async_get_clientsession,
+)
 from homeassistant.helpers.update_coordinator import (
     DataUpdateCoordinator,
     UpdateFailed,
@@ -32,14 +35,15 @@ class EftelingCoordinator(DataUpdateCoordinator):
 
     async def _async_update_data(self):
         try:
+            session = async_get_clientsession(self.hass)
             timeout = aiohttp.ClientTimeout(total=30)
 
-            async with aiohttp.ClientSession(
-                timeout=timeout
-            ) as session:
-                async with session.get(API_URL) as response:
-                    response.raise_for_status()
-                    data = await response.json()
+            async with session.get(
+                API_URL,
+                timeout=timeout,
+            ) as response:
+                response.raise_for_status()
+                data = await response.json()
 
             live_data = data.get("liveData", [])
 
